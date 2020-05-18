@@ -1,0 +1,51 @@
+@import "colors";
+
+// This defines all syntax variables that syntax themes must implement when they
+// include a syntax-variables.less file.
+
+// General colors
+@syntax-text-color:       @air;
+@syntax-text-subtle:      @spider;
+@syntax-text-reverse:     @alocasia;
+@syntax-text-info:        @monstera;
+@syntax-text-success:     @fern;
+@syntax-text-warning:     saturate(mix(@pothos,@croton,40%),160%);
+@syntax-text-error:       @croton;
+@syntax-text-highlight:   @pothos;
+@syntax-text-alt:         @fiddle;
+@syntax-text-function:    @root;
+@syntax-text-parameters:  @soil;
+
+@syntax-cursor-color:     @alocasia;
+@syntax-selection-color:  lighten(@alocasia,4%);
+
+@syntax-background-color:     @alocasia;
+@syntax-background-info:      @monstera;
+@syntax-background-success:   @fern;
+
+@syntax-border-color:     @alocasia;
+
+
+// Guide colors
+@syntax-wrap-guide-color:           @air;
+@syntax-indent-guide-color:         darken(@air,20%);
+@syntax-invisible-character-color:  darken(@air,30%);
+
+
+// For find and replace markers
+@syntax-result-marker-color:          @monstera;
+@syntax-result-marker-color-selected: @fern;
+
+
+// Gutter colors
+@syntax-gutter-text-color:                darken(@air,60%);
+@syntax-gutter-text-color-selected:       darken(@syntax-text-color,50%);
+@syntax-gutter-background-color:          lighten(@alocasia,2%);
+@syntax-gutter-background-color-selected: darken(@alocasia,1%);
+
+
+// For git diff info. i.e. in the gutter
+@syntax-color-renamed:  @monstera;
+@syntax-color-added:    @fiddle;
+@syntax-color-modified: saturate(mix(@pothos,@croton,40%),160%);
+@syntax-color-removed:  @croton;
